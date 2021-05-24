@@ -1,7 +1,7 @@
 # KCK_banknote_detector
 
 
-###Project for the KCK laboratory
+### Project for the KCK laboratory
 Counting the total value of Polish banknotes in photos using ORB descriptors ( Oriented FAST and Rotated BRIEF )
 
 
