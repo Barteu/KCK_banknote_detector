@@ -13,15 +13,15 @@ def findDes(images,orb):
 
 def findID(img, desList,orb, thres=11):
 
-    imgArray = []
-    imgArray.append( img.copy())
-    imgArray.append(cv2.flip(img,0))
-    imgArray.append(cv2.flip(img, 1))
-    imgArray.append(cv2.flip(img, -1))
+    img_array = []
+    img_array.append( img.copy())
+    img_array.append(cv2.flip(img,0))
+    img_array.append(cv2.flip(img, 1))
+    img_array.append(cv2.flip(img, -1))
 
     finalVal = -1
 
-    for img1 in imgArray:
+    for img1 in img_array:
 
 
         kp2, des2 = orb.detectAndCompute(img1, None)
@@ -50,7 +50,7 @@ def findID(img, desList,orb, thres=11):
 
 def banknotByORB(desList,orb,img):
 
-    imgOriginal = img.copy()
+    img_original = img.copy()
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     id = findID(img, desList, orb)
     if id != -1:
