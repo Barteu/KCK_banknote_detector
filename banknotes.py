@@ -122,7 +122,3 @@ print("RESULT: |", bFinall[0],": 10PLN |",bFinall[1],": 20PLN |",bFinall[2],": 5
 
 
 cv2.waitKey(0)
-
-
-
-
